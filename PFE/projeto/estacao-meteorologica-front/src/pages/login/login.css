@@ -1,0 +1,129 @@
+/* ================= FUNDO ================= */
+.container-login {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #f4f6fb, #e9e4f0);
+}
+
+/* ================= CAIXA ================= */
+.box-login {
+  display: flex;
+  width: 850px;
+  height: 420px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+  background: white;
+}
+
+/* ================= LADO ESQUERDO ================= */
+.lado-esquerdo {
+  flex: 1;
+  background: linear-gradient(135deg, #b23a8a, #7b2cbf);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.lado-esquerdo h1 {
+  font-size: 32px;
+}
+
+.lado-esquerdo p {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* ================= LADO DIREITO ================= */
+.lado-direito {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.lado-direito h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+/* ================= INPUT ================= */
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  transition: 0.3s;
+}
+
+input:focus {
+  outline: none;
+  border-color: #b23a8a;
+  box-shadow: 0 0 5px rgba(178, 58, 138, 0.3);
+}
+
+/* ================= BOTÃO ================= */
+.btn-login {
+  margin-top: 15px;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #b23a8a, #7b2cbf);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-login:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(123, 44, 191, 0.3);
+}
+
+/* ================= LINK ================= */
+.register-text {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.register-text a {
+  color: #7b2cbf;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.register-text a:hover {
+  text-decoration: underline;
+}
+
+/* ================= RESPONSIVO ================= */
+@media (max-width: 768px) {
+  .box-login {
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+  }
+
+  .lado-esquerdo {
+    padding: 20px;
+  }
+}

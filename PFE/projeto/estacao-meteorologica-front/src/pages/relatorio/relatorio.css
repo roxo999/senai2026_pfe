@@ -1,0 +1,86 @@
+/* ================= CONTAINER ================= */
+.container-relatorio {
+  padding: 30px;
+}
+
+/* ================= TOPO ================= */
+.topo {
+  margin-bottom: 20px;
+}
+
+.topo h2 {
+  color: #333;
+}
+
+.topo p {
+  color: #777;
+}
+
+/* ================= CARD ================= */
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  margin-bottom: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* ================= GRÁFICO ================= */
+.grafico {
+  height: 350px;
+}
+
+/* ================= TABELA ================= */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  background: linear-gradient(135deg, #b23a8a, #7b2cbf);
+  color: white;
+  padding: 12px;
+}
+
+td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+  text-align: center;
+}
+
+tr:hover {
+  background: #f9f9f9;
+}
+
+/* ================= STATUS ================= */
+.status {
+  font-weight: bold;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+
+.status.boa {
+  background: #d4edda;
+  color: #155724;
+}
+
+.status.moderada {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.status.ruim {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+/* ================= RESPONSIVO ================= */
+@media (max-width: 768px) {
+  .container-relatorio {
+    padding: 15px;
+  }
+
+  table {
+    font-size: 12px;
+  }
+}

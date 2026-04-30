@@ -1,0 +1,104 @@
+/* ================= BASE ================= */
+.dashboard-container {
+  max-width: 1100px;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+/* ================= CARDS ================= */
+.cards {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.card {
+  flex: 1;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  border-left: 5px solid #b23a8a;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-info h6 {
+  color: #888;
+  margin: 0;
+  font-size: 14px;
+}
+
+.card-info h2 {
+  color: #b23a8a;
+  margin-top: 8px;
+  font-size: 24px;
+}
+
+/* ================= SEÇÕES ================= */
+.section-header {
+  margin-bottom: 10px;
+}
+
+.section-header h5 {
+  color: #333;
+  font-weight: 600;
+}
+
+/* ================= GRÁFICO ================= */
+.grafico-container {
+  margin-bottom: 20px;
+}
+
+.graficos {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  height: 350px;
+}
+
+/* ================= TABELA ================= */
+.tabela-container {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+.tabela-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tabela-container th {
+  background: linear-gradient(135deg, #b23a8a, #7b2cbf);
+  color: white;
+  padding: 12px;
+  font-size: 14px;
+}
+
+.tabela-container td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+  color: #444;
+}
+
+.tabela-container tr:hover {
+  background-color: #f9f3ff;
+}
+
+/* ================= RESPONSIVO ================= */
+@media (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+  }
+
+  .dashboard-container {
+    padding: 15px;
+  }
+}

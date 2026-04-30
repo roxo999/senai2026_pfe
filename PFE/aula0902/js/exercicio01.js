@@ -1,0 +1,9 @@
+let fundo=document.getElementById('corpo')
+let fundopagina= document.querySelector('#corpo')
+const elemento=document.querySelector('.elemento');
+let nome=' - Ana Clara '
+fundo.style.backgroundColor='#9c9a9d';
+elemento.style.color='#85185a';
+elemento.style.fontSize='48px';
+elemento.textContent+=nome;
+document.getElementById('.ana clara').style.fontFamily='bold'
